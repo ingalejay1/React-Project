@@ -1,0 +1,133 @@
+
+* {
+    background-color: black;
+    animation: fadeIn 2.5s ease-in-out; /*animation*/
+}
+
+/* Key Frames */
+
+@keyframes backgroundZoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+.left-main {
+    background-color: black;
+    color: black;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    animation: backgroundZoom 10s ease-in-out infinite alternate; /*animation*/
+}
+
+.left-main p {
+    position: absolute;
+    background: none;
+    bottom: 50px;
+    margin-left: 50px;
+    color: white;
+    font-size: 3.4375rem;
+    font-weight: 700;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    animation: fadeInZoom 2.5s ease-in-out; /*animation*/
+}
+
+.left-main img {
+    background-Size: cover;
+    background-Position: center;
+    height: 100vh;
+    width: 50vw;
+    animation: fadeInZoom 1.5s ease-in-out; /*animation*/
+}
+
+h1 {
+    font-family: Single Day ;
+    font-size: 4.1875rem;
+    font-weight: 400;
+    color:#72DB73;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #5be75d;
+    transform: scale(1.05); 
+}
+
+span {
+    color:#72DB73; 
+    cursor: pointer;  
+}
+
+.btn-submit {
+    padding: 8px 10px;
+    border-radius: 28px;
+    width: 375px;
+    background-color: #72DB73;
+    color: white;
+    border: "none";
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5be75d;
+    transform: scale(1.05); 
+}
+
+.form-input {
+    width: 375px;
+    height: 40px;
+    background-color: #292929;
+    color: white;
+}
+
+
+.normalText {
+    color: #7C7C7C;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 12px;
+}
+
+.createAcc {
+    color: white;
+    margin-bottom: 20px;
+}
