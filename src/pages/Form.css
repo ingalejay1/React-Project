@@ -1,6 +1,7 @@
 
-* {
+.container {
     background-color: black;
+    display: flex;
     animation: fadeIn 2.5s ease-in-out; /*animation*/
 }
 

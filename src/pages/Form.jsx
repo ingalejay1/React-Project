@@ -79,23 +79,16 @@ function Form() {
       newErrors.checkbox === ""
     ) {
       localStorage.setItem("userData", JSON.stringify(formData));
-      navigate("/genre");
+      navigate("/genera");
     }
   };
   return (
-    <div
-      style={{
-        display: "flex",
-      }}
-    >
+    <div className='container' >
       <div className='left-main'>     
         <img src={backgroundMain} alt='backgroundImage'/>
-
-        <p>
-          Discover new things on Superapp
-        </p>
-
+        <p>  Discover new things on Superapp  </p>
       </div>
+
       <form
         style={{
           display: "flex",

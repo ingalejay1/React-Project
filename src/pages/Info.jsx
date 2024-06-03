@@ -2,7 +2,7 @@ import React from 'react'
 
 function Info() {
   return (
-    <div>Info</div>
+    <div>Info jay ganesh ingale</div>
   )
 }
 
